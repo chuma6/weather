@@ -146,15 +146,15 @@ body{
         background-size: cover;
     }
     #icon{
-        margin-top:50px;
+        margin-top:0%;
     }
     #icon img{
         width: 130px
     }
     #sunriseSunset{
-        margin-top:30px;
+        margin-top:8%;
     }
     #location{
-        margin-top:30px;
+        margin-top:0%;
     }
 }

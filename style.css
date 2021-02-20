@@ -1,0 +1,160 @@
+@font-face{
+    font-family:weather;
+    src:url('./fonts/rimouski.ttf');
+}
+*{
+    margin:0px;
+    padding:0px;
+    text-decoration:none;
+    font-family:weather;
+}
+body{
+    background:linear-gradient(to left,rgb(0, 0, 0),rgb(0, 0, 0));
+    color:white;
+}
+.clearfix{
+    float: none;
+    clear:both;
+}
+
+#weather{
+    width: 350px;
+    height: 450px;
+    margin:0px auto;
+    margin-top:120px;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.486)),url('./icons/icono.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+#notification{
+    display: none;
+    background-color: red;
+    height: 40px;
+    text-align: center;
+    color:white;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+#time{
+    padding-top:20px;
+    padding-left:20px;
+    font-size:22px;
+}
+#icon{
+    padding-top:30px;
+    text-align: center;
+}
+#min{
+    float: left;
+    width: 24%;
+    padding:10px 0px;
+    text-align:center;;
+    overflow: hidden;
+}
+#min p{
+    transform: translateY(-150%);
+    transition:all 1s;
+}
+#min div{
+    transform: translateY(150%);
+    transition:all 1s;
+}
+#temperature{
+    font-size:50px;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    width: 50%;
+    float: left;
+}
+#max{
+    float: left;
+    width: 24%;
+    padding:10px 0px;
+    text-align: center;
+    overflow: hidden;
+}
+#max p{
+    transform: translateY(-150%);
+    transition:all 1.5s;
+}
+#max div{
+    transform: translateY(150%);
+    transition:all 1.5s;
+}
+
+#temperature span{
+    font-size:30px;
+}
+#description{
+    font-size:25px;
+    text-align: center;
+}
+#sunriseSunset{
+    width: 100%;
+}
+#sunset{
+    float: right;
+    width: 20%;
+    text-align: center;
+    margin:5%;
+    overflow: hidden;
+}
+#sunset img{
+    width: 70%;
+    cursor: pointer;
+}
+#sunset p{
+    transform: translateY(100%);
+    transition:all 1s;
+}
+#sunrise{
+    float: left;
+    width: 20%;    
+    text-align:center;
+    margin:5%;
+    overflow: hidden;
+}
+#sunrise img{
+    width: 70%;
+    cursor: pointer;
+}
+#sunrise p{
+    transform: translateY(100%);
+    transition:all 1s;
+}
+#location{
+    font-size: 25px;;
+    text-align: center;
+}
+#location span{
+    font-size:20px;
+}
+
+/*RESPONSIVE WEB DESIGN*/
+
+@media(max-width : 768px){
+    #weather{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin-top:0px;
+        border-radius: 0px; 
+        background-size: cover;
+    }
+    #icon{
+        margin-top:50px;
+    }
+    #icon img{
+        width: 130px
+    }
+    #sunriseSunset{
+        margin-top:30px;
+    }
+    #location{
+        margin-top:30px;
+    }
+}

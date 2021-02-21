@@ -24,10 +24,9 @@ window.addEventListener("load",function(){
     setInterval(function(){
         var date = new Date();
         var hour = `${date.getHours()}:${date.getMinutes()}`;
-        var getDay = date.getDay();
+        var getDay = 0;
         if(getDay == 0){
             timeDOM.innerHTML = timeDOM.innerHTML = `${hour},<span>Sunday</span>`
-
         }else{
             var day = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
             timeDOM.innerHTML = `${hour},<span> ${day[getDay-1]}</span>`
